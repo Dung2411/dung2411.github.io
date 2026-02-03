@@ -1,26 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  margin: 0;
-  padding: 0;
+    background: #eaeaea;
+    padding: 40px;
 }
 
-h1 {
-  color: #1f4fd8;
+.cv {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    display: flex;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
 
-h2 {
-  color: #333;
+/* CỘT TRÁI */
+.left {
+    width: 35%;
+    background: #2f5d62;
+    color: white;
+    padding: 30px;
+    text-align: center;
 }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  background: #fff;
-  padding: 20px;
+.left img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 15px;
 }
 
-a {
-  color: #1f4fd8;
-  text-decoration: none;
+.left h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.left h2 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.left .section {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.left h3 {
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.left ul {
+    list-style: none;
+}
+
+.left li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.left p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* CỘT PHẢI */
+.right {
+    width: 65%;
+    padding: 35px;
+}
+
+.right section {
+    margin-bottom: 30px;
+}
+
+.right h3 {
+    color: #2f5d62;
+    border-left: 5px solid #2f5d62;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.right p, .right li {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.right ul {
+    padding-left: 20px;
 }
